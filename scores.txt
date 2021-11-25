@@ -1,0 +1,4 @@
+
+ gui;;326
+RME;FARINHA;20
+gi;arroz;13
