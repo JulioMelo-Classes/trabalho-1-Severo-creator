@@ -19,3 +19,44 @@ fazer com que o código lesse os arquivos txt, por algum motivo ele os ignora me
 segmetn erro. Porém  o código funciona normalmente, no replit por exemplo o programa executou de forma perfeita.
 
 Doxygen: tentei usar documentação basica do Doxygen mas saiu um monte de documentos em branco.
+
+
+# Avaliação
+
+## Código | Funcionalidades
+1. Classe forca 10/10
+
+2. Interface textual 10/10
+
+3. Execução completa do jogo 10/15
+- A forma como a dificuldade é calculada está com números fixos, ou seja vc não calcula a frequencia média.
+- Também não são sorteadas as letras que devem ser exibidas nos modos fácil e médio.
+
+4. Validação dos arquivos de texto 1/5
+- Vc implementou algumas validações então vou considerar um pouco aqui.
+
+5. Arquivos de teste de validação dos casos de erro 0/5
+
+6. Arquivos de teste de validação dos níveis de dificuldade 1/5
+- Aqui era esperado que vc enviasse arquivos de teste para os níveis de dificuldade
+
+7. Observações gerais
+- Você não precisava usar a classe forca com new
+- A forma como vc tentou pegar o tamanho do vetor de palavras está errada, você até acertou em um ponto e usou `sizeof`
+em outros. A função `sizeof` serve para retornar o tamanho em bytes que um __tipo__ ocupa e não para tamanho de vetores.
+Em C quando um vetor é int[10], o tipo dele também é int[10], logo `sizeof` retorna o tamanho dele, no entanto se o vetor
+for int* sizeof não serve mais para calcular o tamanho, logo também não vai calcular o tamanho se for um std::vector ou outro
+container.
+- Não era necessário configurar o Doxyfile
+
+## Código | Boas práticas
+
+1. Documentação do código e readme 0/10
+- não foram documentados os métodos e funções implementadas
+
+2. Organização e indentação 2/10
+- A indentação está realmente muito ruim no forca.hpp, bem como você não seguiu a organização src/include/data
+
+3. Compilação automatizada 5/5
+- Vou considerar embora a organização não esteja correta
+
